@@ -28,3 +28,10 @@ The code includes functions to:
 ## Additional Notes
 
 This project aims to showcase a basic implementation of a CNN model for fault detection in bottle images. Feel free to modify and expand upon the code to suit your requirements.
+
+## Project governance
+
+- Contributions: [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- Security reports: [`SECURITY.md`](SECURITY.md)
+- License: [`LICENSE`](LICENSE)
+- Change history: [`CHANGELOG.md`](CHANGELOG.md)
