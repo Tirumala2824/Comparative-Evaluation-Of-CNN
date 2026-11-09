@@ -1,22 +1,25 @@
 ## Summary
 
-<!-- What changed and why? -->
+Describe the problem and the outcome of this change.
 
-## Related issue
+## Design and architecture
 
-<!-- Link an issue, or explain why none exists. -->
+Explain the main design decision, affected boundaries, and any trade-offs. Note whether the change preserves the repository’s stated architecture.
 
 ## Validation
 
-- [ ] Tests added or updated, or testing is not applicable and explained below
-- [ ] Formatting, linting, and type checks run where applicable
-- [ ] Documentation updated
-- [ ] No secrets, credentials, private data, or generated artifacts added
+- [ ] Tests added or updated for changed behavior.
+- [ ] Linting, formatting, type checking, or build checks completed.
+- [ ] Documentation and changelog updated where needed.
+- [ ] Security and privacy implications reviewed.
+- [ ] No secrets, private data, generated artifacts, or unlicensed assets included.
 
-## Risk and rollout
+Validation commands and relevant output:
 
-<!-- Describe compatibility, migrations, deployment, rollback, and operational risks. -->
+```text
 
-## Screenshots or API examples
+```
 
-<!-- Include for visual or API changes; remove if not applicable. -->
+## Compatibility and operations
+
+Describe API, data, migration, deployment, rollback, or release implications. If none apply, state that explicitly.

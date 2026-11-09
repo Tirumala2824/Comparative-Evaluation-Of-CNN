@@ -1,21 +1,9 @@
 # Contributing
 
-Thank you for considering a contribution. This repository uses a review-first workflow so that changes remain understandable, tested, and maintainable.
+Thank you for helping improve this repository. Contributions should be scoped, reproducible, and aligned with the repository’s stated category and architecture.
 
-## Before opening a change
+Before opening a pull request, read the repository README and documentation, create an issue for non-trivial changes, keep the change focused, and update tests and documentation when behavior changes. Do not include credentials, private data, unlicensed datasets, generated build output, or unrelated formatting churn.
 
-Read the README and the relevant documentation under `docs/`. For a bug, include a minimal reproduction, expected behavior, actual behavior, environment details, and relevant logs with secrets removed. For a feature, explain the user problem, proposed behavior, alternatives considered, and testing plan.
+A pull request should explain the problem, the chosen approach, compatibility or migration impact, security considerations, and validation evidence. The minimum validation command is the repository’s documented CI command; if a check cannot be run locally, explain why and provide an alternative verification.
 
-## Development workflow
-
-Create a focused branch from the default branch using a descriptive name such as `feat/short-description`, `fix/short-description`, or `docs/short-description`. Keep commits small and meaningful. Do not commit credentials, local environment files, generated build output, private datasets, or dependency caches.
-
-Before opening a pull request, run the documented installation, formatting, linting, type-checking, and test commands that apply to the project. Update documentation and the changelog when behavior or public interfaces change.
-
-## Pull requests
-
-Use the pull-request template. A pull request should explain the change, link the relevant issue, identify risks and migrations, include tests or a reason tests are not applicable, and include screenshots for visual changes. Maintainers may request revisions before merging.
-
-## Code of conduct and security
-
-Please follow [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md). Do not report security vulnerabilities in public issues; follow [`SECURITY.md`](SECURITY.md).
+Commit messages should be imperative and specific. The default integration style is squash merging after review. Maintainers may request architectural or documentation changes before approving code.

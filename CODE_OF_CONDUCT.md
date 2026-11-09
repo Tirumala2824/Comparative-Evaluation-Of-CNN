@@ -1,13 +1,7 @@
 # Code of Conduct
 
-## Expected behavior
+This project aims to be a respectful, technically rigorous, and welcoming space. Participants must communicate professionally, assume good faith, focus criticism on ideas and implementations, and respect privacy and differing backgrounds.
 
-Participants are expected to be respectful, constructive, inclusive, and professional. Give feedback about ideas and implementation rather than people. Assume good intent while addressing impact clearly.
+Unacceptable behavior includes harassment, discrimination, threats, deliberate disruption, publication of private information, and submission of malicious or knowingly unsafe code. Maintainers may remove content, close discussions, or restrict participation when necessary to protect the project.
 
-## Unacceptable behavior
-
-Harassment, discrimination, threats, personal attacks, doxxing, sexualized conduct, and deliberately disruptive behavior are not acceptable.
-
-## Reporting
-
-Report concerns privately to the repository owner or through GitHub's private reporting mechanisms. Reports will be reviewed as confidentially as practical.
+For conduct concerns, contact the maintainer privately rather than escalating the issue in a public thread.

@@ -1,0 +1,38 @@
+name: Repository hygiene
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  baseline:
+    name: Baseline repository checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in README.md LICENSE CHANGELOG.md CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md .editorconfig docs/architecture.md; do
+            test -f "$file" || { echo "Missing required file: $file" >&2; exit 1; }
+          done
+          grep -q "TODO\|One-sentence description\|Describe the problem" README.md && {
+            echo "README still contains template placeholders; replace them before merging." >&2
+            exit 1
+          } || true
+
+      - name: Check for obvious secret files
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find . -path './.git' -prune -o -type f \( -name '.env' -o -name '*.pem' -o -name '*.key' \) -print -quit | grep -q .; then
+            echo "Potential secret file detected; remove it or document a safe fixture." >&2
+            exit 1
+          fi

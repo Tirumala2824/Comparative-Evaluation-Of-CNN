@@ -1,26 +1,5 @@
-# Architecture and project structure
+# Architecture
 
-## Scope
+This repository is a computer-vision research artifact for comparing CNN-based approaches to bottle-defect detection. The Python scripts load an image directory, prepare labels and tensors, construct model variants, train them, and evaluate results.
 
-This document records the repository boundaries and the locations that maintainers should inspect first. It is a baseline and should be refined as the project architecture becomes clearer.
-
-## Top-level entries
-
-- `7thSemProject.py`
-- `BuildCnn.py`
-- `Cnn_Torch.py`
-- `Comparing Algorithm`
-- `README.md`
-- `__pycache__`
-
-## Responsibilities
-
-Document the main application, data, UI, integration, and persistence boundaries here. Keep external services and trust boundaries explicit.
-
-## Data and dependency flow
-
-Describe inputs, transformations, storage, outputs, background jobs, and external APIs. State where validation, authentication, authorization, retries, and error handling occur.
-
-## Maintainability notes
-
-Prefer small modules with explicit interfaces. Keep tests close to the behavior they protect and keep generated or local-only files out of version control.
+The research boundary is intentionally separate from production inspection. A production system would require versioned datasets, label-quality controls, deterministic experiment configuration, model and metric tracking, inference validation, hardware and latency testing, monitoring, and a documented human-review path. The committed `__pycache__` artifact should be removed in a future cleanup change.

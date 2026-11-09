@@ -1,15 +1,13 @@
 # Security Policy
 
-## Supported versions
-
-Security fixes are prioritized for the default branch and the most recent documented release, when releases are maintained. Older snapshots may not receive security updates.
-
 ## Reporting a vulnerability
 
-Please do not disclose vulnerabilities in public issues. Report suspected vulnerabilities privately through the repository's GitHub security advisory or private contact channel, including a clear description, affected files or versions, reproduction steps, impact assessment, and a suggested mitigation where available.
+Please do not disclose security vulnerabilities in public issues, discussions, or pull requests. Report them privately through the repository’s GitHub security advisory mechanism when enabled, or contact the maintainer through the verified profile contact path with the repository name, affected version or commit, reproduction steps, impact, and a safe remediation suggestion.
 
-Remove credentials and personal data from reports. Do not include live secrets. If a secret may have been exposed, revoke or rotate it immediately through the relevant provider and then report the incident.
+Do not include secrets, personal data, private documents, audio recordings, transcripts, or production tokens in a report. Redact sensitive material and provide the smallest reproducible artifact.
 
-## Security expectations
+## Scope
 
-Dependencies should be kept current, input should be validated at trust boundaries, logs should not contain secrets, and production configuration should be supplied through a secret manager or deployment environment rather than committed files.
+Security concerns include exposed credentials, authentication or authorization bypasses, unsafe file or document handling, injection, dependency vulnerabilities, privacy leaks, insecure AI-provider boundaries, and accidental publication of private product data.
+
+Repositories may be prototypes or archives. Their README status section is authoritative about deployment and support expectations; an archival project should not be used as a production dependency without independent review.

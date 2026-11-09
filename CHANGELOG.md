@@ -1,8 +1,15 @@
 # Changelog
 
-All notable changes to this project should be documented here. The format follows a simple Keep-a-Changelog style, with release versions added when the project begins publishing versioned releases.
+All notable changes to this project are documented here.
+
+The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and releases follow [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
-- Established the professional repository baseline.
-- Added contribution, security, community, and automation guidance where missing.
+### Added
+
+### Changed
+
+### Fixed
+
+### Security
